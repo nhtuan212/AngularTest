@@ -1,0 +1,22 @@
+<!-- array Author -->
+<div class="row mb-4">
+    <app-author-detail class="col-md-3"
+        *ngFor="let author of authors"
+        [author]="author"
+        (deleteAuthor)="handleDelete($event)"
+        (selectAuthor)="handleSelected($event)">
+    </app-author-detail>
+
+    <div class="select-change text-center">
+        <p>Current Selected author: {{currentAuthor.firstName}} {{currentAuthor.lastName}}</p>
+        <p>Current Deleted author: {{deleteAuthor.firstName}} {{deleteAuthor.lastName}}</p>
+    </div>
+</div>
+
+<!-- array Author 2 -->
+<div class="row mb-4">
+    <app-author-detail class="col-md-6"
+        *ngFor="let author2 of authors2"
+        [author2]="author2">
+    </app-author-detail>
+</div>

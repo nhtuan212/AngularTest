@@ -1,0 +1,21 @@
+<a class="author-items d-flex align-items-center py-2" *ngIf="author">
+    <div class="img me-2">
+        <app-img [src]="author.photo" [alt]="author.lastName"></app-img>
+    </div>
+    <div class="info">
+        <div class="text-end mb-2">
+            <button class="btn btn-danger me-2" (click)="handleSelect()">Select</button>
+            <button class="btn btn-primary" (click)="handleDelete()">x</button>
+        </div>
+        <div class="name">{{author.firstName}} {{author.lastName}}</div>
+    </div>
+</a>
+
+<a class="author2-items d-flex align-items-center py-2" *ngIf="author2">
+    <div class="img me-2">
+        <app-img [src]="author2.photo" [alt]="author2.lastName"></app-img>
+    </div>
+    <div class="info">
+        <div class="name">{{author2.firstName}} {{author2.lastName}}</div>
+    </div>
+</a>
