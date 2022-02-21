@@ -1,0 +1,5 @@
+<h4 class="title text-center">{{title}}</h4>
+
+<div *ngFor="let author of authors; index as idx; count as total" class="py-1">
+    ({{idx}})/({{total}}): {{author.id}} - {{author.firstName}} {{author.lastName}}
+</div>

@@ -1,0 +1,33 @@
+<h4 class="title text-center">{{title}}</h4>
+
+
+<!-- template Variable -->
+<!-- clickMe là instance của toggle Component -->
+<div class="py-5 d-flex">
+    <div class="col-md-3">
+        <app-toggle #clickMe [(active)]="active"></app-toggle>
+    </div>
+    <div class="col-md-3">
+        <app-toggle #clickMe [(active)]="active"></app-toggle>
+    </div>
+    <div class="col-md-3">
+        <app-toggle #clickMe [(active)]="active"></app-toggle>
+    </div>
+    <ng-container *ngIf="showLast">
+        <div class="col-md-3">
+            <app-toggle #clickMe [(active)]="active"></app-toggle>
+        </div>
+    </ng-container>
+</div>
+
+<div class="text-center">
+    <div class="form-group mb-2">
+        <input #inputName class="form-control" type="text">
+    </div>
+    <div class="col-12 py-2">
+        <button #clickBtn (click)="clickMe.addClass()" class="btn btn-danger">Click me!</button>
+    </div>
+    <div class="col-12 py-2">
+        <button #clickBtn (click)="showLast = !showLast" class="btn btn-danger">Show Last</button>
+    </div>
+</div>

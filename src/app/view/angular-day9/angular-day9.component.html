@@ -1,0 +1,8 @@
+<h4 class="title text-center">{{title}}</h4>
+
+<div class="form-group mt-5 mb-2">
+    <input class="form-control" type="text" [ngModel]="name" (ngModelChange)="name = $event">
+</div>
+<p>Follow Input: {{name}}</p>
+
+<app-toggle [(active)]="active"></app-toggle>

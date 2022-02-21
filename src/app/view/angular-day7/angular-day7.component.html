@@ -1,0 +1,7 @@
+<h4 class="title text-center">{{title}}</h4>
+
+<div class="row">
+    <div class="image-item col-2" *ngFor="let author of authors; index as idx; count as total">
+        <app-img [src]="author.photo?.url" [alt]="author.lastName"></app-img>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<h4 class="title text-center">{{title}}</h4>
+
+<h2>Hello there!</h2>
+<h3>Your name: {{ user.name }}</h3>
+<p>Your name: {{ user.age }}</p>
+<div *ngIf="user.age >= 21; else noPG13">
+    Bạn có thể xem nội dung >= 21
+</div>
+
+<ng-template #noPG13>
+    <div>
+        Bạn không thể xem nội dung < 21 
+    </div>
+</ng-template>

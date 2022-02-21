@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { authors, authors2, Author } from '../authors';
+import { authors, authors2, Author } from '../../../api/authorsListAPI';
 
 @Component({
     selector: 'app-author-list',

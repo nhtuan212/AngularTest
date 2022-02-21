@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Author } from "../authors";
+import { authors, authors2, Author } from '../../../api/authorsListAPI';
 
 @Component({
     selector: 'app-author-detail',
