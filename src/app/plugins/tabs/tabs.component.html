@@ -1,0 +1,19 @@
+<ul class="nav my-3">
+    <li class="nav-item" *ngFor="let navs of navs">
+        <a class="nav-link active" aria-current="page" href="#">
+            <ng-container *ngIf="linkTemplate; else noTemplate">
+                <!-- Cách viết khác -->
+                <!-- <ng-container [ngTemplateOutlet]="linkTemplate" [ngTemplateOutletContext]="{ navs: navs }"></ng-container> -->
+                
+                <!-- Cách khai báo thường -->
+                <!-- <ng-container *ngTemplateOutlet="linkTemplate; context:{ navs: navs }"></ng-container> -->
+
+                <!-- Cách dùng $implicit -->
+                <ng-container *ngTemplateOutlet="linkTemplate; context:{ $implicit: navs }"></ng-container>
+            </ng-container>
+            <ng-template #noTemplate>
+                {{ navs }}
+            </ng-template>
+        </a>
+    </li>
+</ul>

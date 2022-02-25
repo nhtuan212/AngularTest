@@ -1,0 +1,26 @@
+<h4 class="title text-center">{{title}}</h4>
+<div class="row">
+    <div class="col text-center">
+        <app-toggle>
+            <h3 class="toggle-header">Header 1</h3>
+            <label class="toggle-description">Description 1</label>
+            <div class="toggle-content">Content 1</div>
+        </app-toggle>
+    </div>
+    <div class="col text-center">
+        <app-toggle>
+            <h3 class="toggle-header">Header 2</h3>
+            <span class="toggle-description" ngProjectAs="label">Description 2</span>
+
+            <!-- Nếu xài ngProjectAs thì bỏ khai báo span bên toggle.component
+            <ng-container ngProjectAs="label"><div class="test-class">Description 2</div></ng-container> -->
+
+            <ng-container ngProjectAs="label">
+                <div class="test-class">Description 2</div>
+            </ng-container>
+
+            <div class="toggle-content">Content 2</div>
+            <button class="btn btn-primary">Button</button>
+        </app-toggle>
+    </div>
+</div>

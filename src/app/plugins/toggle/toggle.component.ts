@@ -6,7 +6,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     styleUrls: ['./toggle.component.scss']
 })
 export class ToggleComponent implements OnInit {
-
     // Two-way binding thực chất là 1 input và output có cùng tên với input + Change;
     @Input() active = false;
     @Output() activeChange = new EventEmitter<boolean>();

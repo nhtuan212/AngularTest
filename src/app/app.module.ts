@@ -18,6 +18,9 @@ import { AngularDay5Component } from './view/angular-day5/angular-day5.component
 import { AngularDay8Component } from './view/angular-day8/angular-day8.component';
 import { AngularDay9Component } from './view/angular-day9/angular-day9.component';
 import { AngularDay10Component } from './view/angular-day10/angular-day10.component';
+import { AngularDay13Component } from './view/angular-day13/angular-day13.component';
+import { AngularDay14Component } from './view/angular-day14/angular-day14.component';
+import { TabsComponent } from './plugins/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { AngularDay10Component } from './view/angular-day10/angular-day10.compon
     AngularDay8Component,
     AngularDay9Component,
     AngularDay10Component,
+    AngularDay13Component,
+    AngularDay14Component,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,
