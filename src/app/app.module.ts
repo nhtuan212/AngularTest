@@ -21,6 +21,7 @@ import { AngularDay10Component } from './view/angular-day10/angular-day10.compon
 import { AngularDay13Component } from './view/angular-day13/angular-day13.component';
 import { AngularDay14Component } from './view/angular-day14/angular-day14.component';
 import { TabsComponent } from './plugins/tabs/tabs.component';
+import { AngularDay15Component } from './view/angular-day15/angular-day15.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { TabsComponent } from './plugins/tabs/tabs.component';
     AngularDay13Component,
     AngularDay14Component,
     TabsComponent,
+    AngularDay15Component,
   ],
   imports: [
     BrowserModule,

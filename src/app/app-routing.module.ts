@@ -11,6 +11,7 @@ import { AngularDay9Component } from './view/angular-day9/angular-day9.component
 import { AngularDay10Component } from './view/angular-day10/angular-day10.component';
 import { AngularDay13Component } from './view/angular-day13/angular-day13.component';
 import { AngularDay14Component } from './view/angular-day14/angular-day14.component';
+import { AngularDay15Component } from './view/angular-day15/angular-day15.component';
 
 const routes: Routes = [
     { path: '', component: IndexComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
     { path: 'day-9', component: AngularDay9Component },
     { path: 'day-10', component: AngularDay10Component },
     { path: 'day-14', component: AngularDay14Component },
+    { path: 'day-15', component: AngularDay15Component },
 ];
 
 @NgModule({
